@@ -1,0 +1,63 @@
+{
+  "name": "storybook-solid",
+  "version": "0.0.1-beta01",
+  "description": "Storybook for Solid: View Solid components in isolation with hot reloading.",
+  "keywords": [
+    "storybook",
+    "solid"
+  ],
+  "homepage": "https://github.com/storybookjs/solid/app/solid",
+  "bugs": {
+    "url": "https://github.com/storybookjs/solid/issues"
+  },
+  "repository": {
+    "type": "git",
+    "directory": "app/solid"
+  },
+  "license": "MIT",
+  "files": [
+    "bin/**/*",
+    "dist/**/*",
+    "README.md",
+    "*.js",
+    "*.d.ts"
+  ],
+  "main": "dist/client/index.js",
+  "typings": "dist/client/index.d.ts",
+  "bin": {
+    "build-storybook": "./bin/build.js",
+    "start-storybook": "./bin/index.js",
+    "storybook-server": "./bin/index.js"
+  },
+  "scripts": {
+  },
+  "dependencies": {
+    "@storybook/addons": "6.1.21",
+    "@storybook/client-api": "6.1.21",
+    "@storybook/core": "6.1.21",
+    "@types/webpack-env": "^1.15.3",
+    "core-js": "^3.0.1",
+    "global": "^4.3.2",
+    "html-loader": "^1.0.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "regenerator-runtime": "^0.13.7",
+    "ts-dedent": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/babel__core": "^7.1.12",
+    "solid-js": "^0.24.13",
+    "typescript": "^4.2.3"
+  },
+  "peerDependencies": {
+    "@babel/core": "*",
+    "solid-js": "^0.24.0",
+    "babel-preset-solid": "^0.24.0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
