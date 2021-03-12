@@ -5,8 +5,9 @@ const shell = require('shelljs');
 
 function getCommand(watch) {
   const tsc = path.join(__dirname, '..', 'node_modules', '.bin', 'tsc');
+  const outDir = path.join(__dirname, '../app/solid/dist');
 
-  const args = ['--outDir ./app/solid/dist', '--listEmittedFiles true'];
+  const args = [`--outDir ${outDir}`, '--listEmittedFiles true'];
 
   /**
    * Only emit declarations if it does not need to be compiled with tsc

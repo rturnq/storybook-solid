@@ -30,6 +30,7 @@
     "storybook-server": "./bin/index.js"
   },
   "scripts": {
+    "prepare": "node ../../scripts/prepare.js"
   },
   "dependencies": {
     "@storybook/addons": "6.1.21",
