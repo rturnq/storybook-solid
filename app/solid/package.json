@@ -1,6 +1,6 @@
 {
   "name": "storybook-solid",
-  "version": "0.0.1-beta01",
+  "version": "0.0.1-beta02",
   "description": "Storybook for Solid: View Solid components in isolation with hot reloading.",
   "keywords": [
     "storybook",
