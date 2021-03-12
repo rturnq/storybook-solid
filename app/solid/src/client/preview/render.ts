@@ -15,19 +15,17 @@ export default function renderMain({
   showError,
   forceRender,
 }: RenderContext) {
-  try {
-    dispose && dispose();
-    dispose = render(storyFn, rootElement);
-    showMain();
-  } catch (err) {
+  if (typeof storyFn !== 'function') {
     showError({
-      title: `Expecting a Solid element from the story: "${name}" of "${kind}".`,
+      title: `Expecting a Solid render function from the story: "${name}" of "${kind}".`,
       description: dedent`
         Did you forget to return the Solid element from the story?
         Use "() => (<MyComp/>)" or "() => { return <MyComp/>; }" when defining the story.
-
-        ${err}
       `,
     });
   }
+
+  dispose && dispose();
+  dispose = render(storyFn, rootElement);
+  showMain();
 }
