@@ -6,9 +6,9 @@
     "storybook",
     "solid"
   ],
-  "homepage": "https://github.com/storybookjs/solid/app/solid",
+  "homepage": "https://github.com/rturnq/storybook-solid",
   "bugs": {
-    "url": "https://github.com/storybookjs/solid/issues"
+    "url": "https://github.com/rturnq/storybook-solid/issues"
   },
   "repository": {
     "type": "git",
