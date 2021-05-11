@@ -19,7 +19,7 @@ npx sb init --type html
 Remove the `@storybook/html` package and install `storybook-solid` as a dev dependency
 ```
 npm uninstall @storybook/html
-npm install -D storybook-solid
+npm install --save-dev storybook-solid --legacy-peer-deps
 ```
 Write your stories as per normal (note the examples installed from the CLI tool will not work) and then start storybook
 ```
